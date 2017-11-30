@@ -53,9 +53,9 @@ def match_template(img_orig, template, method):
         top_left = min_loc
     else:
         top_left = max_loc
-    
+
     bottom_right = (top_left[0] + w, top_left[1] + h)
-    # print(top_left, bottom_right)
+    print(top_left, bottom_right)
     cv2.rectangle(img, top_left, bottom_right, 255, 2)
     plt.imshow(img, cmap='gray')
     plt.show()
